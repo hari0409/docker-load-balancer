@@ -1,25 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <%- include('../partials/head'); %>
 </head>
+
 <body class="container">
 
-<header>
-  <%- include('../partials/header'); %>
-</header>
+  <header>
+    <%- include('../partials/header'); %>
+  </header>
 
-<main>
-  <div class="jumbotron">
-    <h1>This is great</h1>
-    <p>Welcome to templating using EJS</p>
-    <p><%= ip_address %></p>
-  </div>
-</main>
+  <main>
+    <div class="jumbotron">
+      <h1>This is great</h1>
+      <p>Welcome to MOOC</p>
+      <p>
+        <%= ip_address %>
+      </p>
+      <div class="container text-center">
+        <div class="row m-2">
+          <div class="col m-2">
+            <%- include('../partials/card'); %>
+          </div>
+          <div class="col">
+            <%- include('../partials/card'); %>
+          </div>
+          <div class="col">
+            <%- include('../partials/card'); %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
-<footer>
-  <%- include('../partials/footer'); %>
-</footer>
+  <footer>
+    <%- include('../partials/footer'); %>
+  </footer>
 
 </body>
+
 </html>
